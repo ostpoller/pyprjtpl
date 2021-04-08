@@ -72,7 +72,7 @@ sed -i s/\#classified/classified/g .gitignore
 
 echo "# ${NEW_PACKAGE_NAME}" > README.md
 
-rm -rf .git && git init . && git add . && git commit -m 'initial commit'
+rm -rf .git && git init . && git add . && git commit -m 'initial commit' && git branch -M main && git checkout -b develop
 
 echo -e "\n${BLUE}Testing if everything works...${NC}\n"
 
