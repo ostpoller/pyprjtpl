@@ -21,11 +21,18 @@ To use the template for your project run the script ``configure_project.sh``.
 This will replace the placeholders in all files with your project and package name
 as well as the package directory name.
 
-A Python virtual environment is created also. After creation activate it and install 
-the dependencies for the project setup:
+The script is replacing the ``.git`` local repository directory with a freshly initialised one
+and creates and checks out the ``develop`` branch.
+
+Finally, the configure script runs some tests to check, everything has been done successfully.
+
+You are responsible to create a Python virtual environment for your project. 
+After creation activate it and install the dependencies for the project setup:
 
 ```shell
-(venv)$ cd /path/to/projects/project_name
+$ cd /path/to/projects/project_name
+$ python3 -m venv venv
+$ source venv/bin/activate
 (venv)$ pip install -r requirements_dev.txt
 ```
 
