@@ -1,0 +1,4 @@
+# production requirements + testing requirements
+pytest>=6.2.3
+pytest-cov>=2.11.1
+

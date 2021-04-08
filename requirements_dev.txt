@@ -1,0 +1,14 @@
+# production requirements
+-r requirements.txt
+
+# development requirements (testing requirements are in production requirements)
+bandit>=1.7.0
+black>=20.8b1
+flake8>=3.9.0
+isort>=5.8.0
+mypy>=0.812
+pylint>=2.7.4
+recommonmark>=0.7.1
+sphinx>=3.5.3
+sphinx-markdown-tables>=0.0.15
+sphinx-rtd-theme>=0.5.2
